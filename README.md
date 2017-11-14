@@ -1,31 +1,30 @@
-# Convertee release v1.0
+# Convertee release v2.0
 
-## Convertee is a simple, cool and responsive unit converter. Version 1.0 features common length unit conversions.
+## Convertee is a simple, cool and responsive unit converter. Version 2.0 features common length unit conversions.
+## Version 2.0 Includes A Brand New Form Select List Instead Of The Differen Conversions.
 
-**I will definitely be adding other conversions and improvements as i grow this project.**
+#I will definitely be adding other conversions and improvements as i grow this project.
 
-Version 1.0 Features Length Unit Converters
+Version 2.0 Features Length Unit Converters
 
 ```
-Feet To Meters
-Meters To Feet
-Inches To Millimeter
-Millimeter To Inches
-Feet To Inches
-Inches To Feet
-Inches To Centimeters
-Centimeters To Inches
-Feet To Yard
-Yard To Feet
-Miles To Kilometers 
-Kilometers To Miles
+Centimeters
+Decimeters
+Feet
+Inches
+Kilometers
+Meters
+Millimeters
+Miles
+Yards
+
 ```
 
 # Usage
 
 You are only allowed to put in number values inside of the input field. (left on desktop, top on moblie)
 The field accepts decimal values as well!
-Most outputs default at about 4 decimal places.
+ALL outputs default at **9 decimal places.**
 
 
 Once you enter your value simply click the **"Convertee"** button in the middle!
