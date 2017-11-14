@@ -19,6 +19,18 @@ Miles
 Yards
 
 ```
+Also A Mini Color Changer At The Top of The App.
+
+```
+Indigo
+Maroon
+Green
+Black
+White
+Dark Blue
+
+
+```
 
 # Usage
 
@@ -26,8 +38,12 @@ You are only allowed to put in number values inside of the input field. (left on
 The field accepts decimal values as well!
 ALL outputs default at **9 decimal places.**
 
-
+```
 Once you enter your value simply click the **"Convertee"** button in the middle!
+The app updates automaically when a new option from any select list is clicked
+input is changed
+or the **convertee** button is clicked
+```
 
 # License
 
