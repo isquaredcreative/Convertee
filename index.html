@@ -10,6 +10,8 @@
   
 
 <link rel="stylesheet" href="main.css" type="text/css">
+      <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
             
       <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">      
@@ -20,14 +22,50 @@
 
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     
-    <link rel="stylesheet" href="css/font-awesome-animation.min.css">
       
+      
+    
+	
+<!-- COMMON TAGS -->
+    
+<!-- Search Engine -->
+<meta name="description" content="Convertee! - Common Unit Conversions For All!  Version 1.0">
+<meta name="image" content="http://zaydotcom.com/images/snippurple.JPG">
+<!-- Schema.org for Google -->
+<meta itemprop="name" content="Convertee! - The Simple Unit Converter | zaydotcom">
+<meta itemprop="description" content="Convertee! - Common Unit Conversions For All!  Version 1.0">
+<meta itemprop="image" content="http://zaydotcom.com/images/snippurple.JPG">
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta name="og:title" content="Convertee! - The Simple Unit Converter | zaydotcom">
+<meta name="og:description" content="Convertee! - Common Unit Conversions For All!  Version 1.0">
+<meta name="og:type" content="website">
+    
+    <!-- Twitter Card data -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@duplicate_sb">
+<meta name="twitter:creator" content="@duplicate_sb">
+<meta name="twitter:title" content="Convertee! - The Simple Unit Converter">
+<meta name="twitter:description" content="Convertee! - Common Conversions For All! Version 1.0">
+<meta name="twitter:image" content="http://zaydotcom.com/images/snippurple.JPG">  
+      
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-90679326-1', 'auto');
+  ga('send', 'pageview');
+
+</script>      
 </head>
   
 
 
    <body style="background-color: indigo;">
     
+         
+       
        <div class="body-border"></div>
        
          <div class="navi">
@@ -42,7 +80,9 @@
           </div>  
       
       <div id="body-container" class="container">
-    <div class="color-changer container-fluid">
+   
+<!--
+          <div class="color-changer container-fluid">
           
           <select name="colors" >
               <option value="Indigo">Indigo</option>
@@ -53,7 +93,20 @@
               <option value="green">Green</option>
         </select>
           
-          </div>          
+          </div> 
+-->
+          
+          <div class="mobile-changer">
+              
+         <i id="m-star-purple" class="fa fa-circle" aria-hidden="true"></i>
+         <i id="m-star-red" class="fa fa-circle" aria-hidden="true"></i>
+         <i id="m-star-green" class="fa fa-circle" aria-hidden="true"></i>
+         <i id="m-star-blue" class="fa fa-circle" aria-hidden="true"></i>
+         <i id="m-star-black" class="fa fa-circle" aria-hidden="true"></i>
+         <i id="m-star-white" class="fa fa-circle" aria-hidden="true"></i>
+         
+          </div>
+          
   
         
       
@@ -65,14 +118,100 @@
                     <div class="title-row">
                         <h1>Convertee!</h1>
                         
-                        <p>The Simple Unit Converter</p>
+                        <p >The Simple Unit Converter</p>
                     </div>    
                 
           <!-- Header End -->
             </div>
             
            <div class="row">
-               
+            
+            <div class="converter-wrapper">
+                <div id="ct" class="col-sm-12"><h1 class="converter-title">Length Conversions</h1></div>
+              
+                <div class="col-md-5">
+                   
+                   <div class="side-wrapper">
+                        
+                       <div class="side-title"><p>In Side Caption</p></div>
+                        <div class="side-content">
+                            
+                          <div class="side-select">
+                            
+                             <select id="input-select" onchange="convert();">
+                               <option value="icm"> Centimeters</option>
+                               <option value="idm"> Decimeters</option>
+                               <option value="ift"> Feet</option>
+                               <option value="iin"> Inches</option>
+                               <option value="ikm"> Kilometers</option>
+                               <option value="im"> Meters</option>
+                               <option value="imi"> Miles</option>
+                               <option value="imm"> Millimeters</option>
+                               <option value="iyd"> Yards</option>
+                            </select>   
+                              
+                        </div>
+                            
+                       
+                            
+                            <div class="side-input">
+                            
+                                <input id="input" type="number" min="0"  placeholder="0" value="0" oninput="convert();" onchange="convert();">
+                                
+                            </div>
+                       
+                       </div>
+                   </div>
+                
+                </div>
+                
+                 <div class="col-md-2 convert-button input-box">
+                         <p id="convert" onclick="convert();">Convertee!</p>
+                   </div>
+                
+               <div class="col-md-5">
+                <div class="side-wrapper">
+                        
+                       <div class="side-title"><p>In Side Caption</p></div>
+                        <div class="side-content">
+                            
+                          <div class="side-select">   
+                              
+                            <select id="output-select" onchange="convert();">
+                               <option value="ocm"> Centimeters</option>
+                               <option value="odm"> Decimeters</option>
+                               <option value="oft"> Feet</option>
+                               <option value="oin"> Inches</option>
+                               <option value="okm"> Kilometers</option>
+                               <option value="om"> Meters</option>
+                               <option value="omi"> Miles</option>
+                               <option value="omm"> Millimeters</option>
+                               <option value="oyd"> Yards</option>
+                            </select> 
+                              
+                           </div> 
+                            
+                            
+                            <div class="side-input">
+                            
+                                <input id="output"  type="number" min="0" placeholder="0" readonly>
+                                
+                            </div>
+                       
+                       </div>
+                   </div>
+                
+                </div>
+            </div>
+            
+            
+            </div>
+            
+            
+<!--
+            
+           <div class="row">
+       
                <div id="converter" class="input-wrapper"> 
                       
                        <div><h1 id="inputTitle">Feet To Meters Conversion</h1></div>
@@ -92,20 +231,11 @@
                             <input id="outputText" type="number" placeholder=" Meters" readonly > 
                             
                         </div>
-                   
-                   
-                   
-<!--
-                   <div class="col-sm-12 input-box">
-                   
-                       <button type="button" value="Convert">Convert</button>
-                        <button type="reset" value="Clear">Clear</button>    
-                   
-                   </div>
+               </div>  
+             
+               
+              </div>  row end 
 -->
-                       
-               </div>    
-              </div> <!-- row end -->
             
             <div id="units" class="section">
              <div class="row">
@@ -225,7 +355,7 @@
                          <a href="#body-container" class="choice-box-link">
                         <div id="ktm" class="col-sm-3">
                             <div class="choice-box">
-                                <p id="ktmText">Kilometer To Miles</p>
+                                <p id="ktmText">Kilometers To Miles</p>
                            </div>
                         </div>
                        </a>
@@ -236,31 +366,36 @@
             </div>
             
             
+            
                 </div> <!-- container end -->
+             
           </div> <!--  Main Content End  -->
           
 
-  
+ 
           
 <!--  Footer End  -->
+          
+               
        </div>
       
 <!--      Body Container End      -->
       
-            <div id="footer">
+        <div id="footer">
             
             <div class="container-fluid">
                 
-                <div class="col-sm-4">2017 Convertee Converter Version 1.0</div>
+                <div class="col-sm-4">2017 Convertee Converter Version 2.0</div>
                 <div class="col-sm-4">
-                    <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a> 
-                    <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/zaydotcom/Convertee"><i class="fa fa-github" aria-hidden="true"></i></a> 
+                    <a href="https://www.linkedin.com/in/isaiah-clarke-sb/"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
                 </div>
-                <div class="col-sm-4"> powered by inspiration <i class="fa fa-bolt" aria-hidden="true" style="color: yellow;"></i> at  <a id="zdc" href="www.zaydotcom.com">ZayDotCom</a></div>
+                <div class="col-sm-4"> powered by inspiration <i class="fa fa-bolt" aria-hidden="true" style="color: yellow;"></i> at  <a id="zdc" href="http://www.zaydotcom.com/">ZayDotCom</a></div>
                 
             </div>
             
           </div>  
+          
       
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
