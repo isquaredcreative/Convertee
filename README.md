@@ -1,7 +1,7 @@
 # Convertee release v2.0
 
 ## Convertee is a simple, cool and responsive unit converter. Version 2.0 features common length unit conversions.
-## Version 2.0 Includes A Brand New Form Select List Instead Of The Differen Conversions.
+## Version 2.0 Includes A Brand New Form Select List Instead Of The Different Conversions.
 
 # I will definitely be adding other conversions and improvements as i grow this project.
 
@@ -19,14 +19,28 @@ Miles
 Yards
 
 ```
-Also A Mini Color Changer At The Top of The App.
+
+And Liquid Converstions (US)
+
+```
+Cups 
+Gallon
+Liters
+Milliliters
+Ounces
+Pints
+Quarts
+Teaspoons
+Tablespoons
+
+```
+Also A Clickable Mini Color Changer At The Top of The App.
 
 ```
 Indigo
 Maroon
 Green
 Black
-White
 Dark Blue
 
 
@@ -36,7 +50,6 @@ Dark Blue
 
 You are only allowed to put in number values inside of the input field. (left on desktop, top on moblie)
 The field accepts decimal values as well!
-ALL outputs default at **9 decimal places.**
 
 ```
 Once you enter your value simply click the **"Convertee"** button in the middle!
